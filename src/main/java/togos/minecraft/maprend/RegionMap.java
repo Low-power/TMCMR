@@ -31,9 +31,9 @@ public class RegionMap
 		if( r.rx >= maxX ) maxX = r.rx+1;
 		if( r.rz >= maxZ ) maxZ = r.rz+1;
 	}
-		
-	static final Pattern rfpat = Pattern.compile("^r\\.(-?\\d+)\\.(-?\\d+)\\.mca$");
-	
+
+	static final Pattern rfpat = Pattern.compile("^r\\.(-?[0-9]+)\\.(-?[0-9]+)\\.mc[ar]$");
+
 	protected void add( File dir, BoundingRect limit ) {
 		Matcher m;
 		if( dir.isDirectory() ) { 
